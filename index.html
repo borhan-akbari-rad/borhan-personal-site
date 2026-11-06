@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>برهان اکبری راد</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #050816;
+  color: white;
+  font-family: Tahoma, sans-serif;
+}
+
+header {
+  padding: 25px 8%;
+  background: #101a30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00eaff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+nav a:hover { color: #00eaff; }
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: radial-gradient(circle, #12345b, #050816 70%);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 65px);
+  line-height: 1.8;
+  animation: appear 2s ease;
+}
+
+.hero h1 span {
+  color: #00eaff;
+  text-shadow: 0 0 25px #00eaff;
+}
+
+.hero p {
+  color: #c5d5e8;
+  margin: 20px;
+  line-height: 2;
+}
+
+button {
+  padding: 16px 35px;
+  border: none;
+  border-radius: 12px;
+  background: #00eaff;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #00eaff;
+}
+
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #00eaff;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 260px;
+  padding: 35px 20px;
+  background: #101d37;
+  border: 1px solid #164a70;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 0 25px #00eaff44;
+}
+
+.card h3 {
+  color: #00eaff;
+  margin-bottom: 20px;
+}
+
+.card p {
+  color: #c5d5e8;
+  line-height: 2;
+}
+
+.about {
+  max-width: 700px;
+  margin: auto;
+  color: #c5d5e8;
+  line-height: 2.5;
+}
+
+footer {
+  background: #101a30;
+  padding: 30px;
+  text-align: center;
+  color: #9aabc5;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">BORHAN.</div>
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#about">درباره من</a>
+    <a href="#interests">علاقه‌مندی‌ها</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <h1>من <span>برهان اکبری راد</span> هستم</h1>
+  <p>به دنیای شخصی من خوش آمدید 🚀</p>
+  <button onclick="welcome()">ورود به دنیای من</button>
+</div>
+
+<section id="about">
+  <h2>درباره من</h2>
+  <div class="about">
+    من برهان اکبری راد هستم.
+    به کامپیوتر، برنامه‌نویسی، تکنولوژی و هوش مصنوعی علاقه دارم.
+    هدف من یادگیری و ساختن آینده‌ای بزرگ است.
+  </div>
+</section>
+
+<section id="interests">
+  <h2>علاقه‌مندی‌های من</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>💻 برنامه‌نویسی</h3>
+      <p>یادگیری پایتون و ساخت پروژه‌های جذاب</p>
+    </div>
+
+    <div class="card">
+      <h3>🌐 طراحی سایت</h3>
+      <p>ساخت وب‌سایت‌های مدرن و حرفه‌ای</p>
+    </div>
+
+    <div class="card">
+      <h3>🚀 تکنولوژی</h3>
+      <p>کشف دنیای فناوری و هوش مصنوعی</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 | طراحی شده توسط برهان اکبری راد ❤️
+</footer>
+
+<script>
+function welcome() {
+  alert("به وب‌سایت برهان اکبری راد خوش آمدید! 🚀");
+}
+</script>
+
+</body>
+</html>
